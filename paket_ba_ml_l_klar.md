@@ -1,0 +1,50 @@
+name: ecotrack
+description: "Akıllı Atık Tespit ve Takip Mobil Uygulaması"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase Servisleri
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.3
+  cloud_firestore: ^5.5.0
+  firebase_storage: ^12.3.6
+
+  # Durum Yönetimi (State Management)
+  provider: ^6.1.2
+
+  # Kamera & Görsel İşleme
+  camera: ^0.11.0+2
+  image_picker: ^1.1.2
+
+  # Cihaz İçi Makine Öğrenimi (TFLite)
+  tflite_flutter: ^0.10.4
+
+  # Harita ve Konum (Tamamen Ücretsiz - API Keysiz OpenStreetMap)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
+
+  # İzinler ve Yardımcı Kütüphaneler
+  permission_handler: ^11.3.1
+  intl: ^0.19.0
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/models/
+    - assets/images/
